@@ -1,6 +1,7 @@
 body{
 	font-family: serif;
-	background-image: url('IMG_0476.jpg');
+	background-image: linear-gradient(to bottom right, rgba(200, 200, 200, .35), rgba(200, 200, 200, 1)),
+url('IMG_0476.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -10,6 +11,9 @@ body div.top-menu{
 	background-color: rgba(128, 128, 128, .5);
 	margin-top: 18px;
 	margin-right: 74px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 	/*white-space: nowrap;*/
 	/*overflow: auto;*/
 
@@ -45,6 +49,7 @@ body header h1{
 	border-color: rgba(128, 128, 128, .9);
 	border-width: 5px;
 	border-radius: 30px;
+	padding: 10px;
 	/*white-space: nowrap;*/
 }
 
@@ -105,5 +110,4 @@ body div.resource{
 body div.resource a{
 	padding: 10px;
 	display: inline-block;
-	
 }
