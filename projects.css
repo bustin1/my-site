@@ -1,6 +1,7 @@
 body{
 	background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,1));
 	background-repeat: no-repeat;
+  background-size: cover;
 }
 body div.top-menu{
 	background-color: rgba(128, 128, 128, .5);
