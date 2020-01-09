@@ -27,7 +27,7 @@ body{
 	background-color: pink;
 	float: right;
 	margin-right: 100px;
-	background: url("../imgs/IMG_0432.JPG");
+	background: linear-gradient(to bottom right, rgba(0,255,0,0), rgba(0,255,0,1)) fixed;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;

@@ -1,9 +1,8 @@
 body{
 	font-family: serif;
-	background-image: linear-gradient(to bottom right, rgba(0, 255, 255, 0), rgba(0, 255, 255, 1));
-/*url('../imgs/IMG_0476.JPG');*/
+	background: linear-gradient(to bottom right, rgba(0, 255, 255, 0), rgba(0, 255, 255, 1)) fixed;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-size: cover;
 }
 
 /*top menu*/
@@ -93,6 +92,14 @@ body main{
 	border-radius: 30px;
 }
 
+#more{
+	display: none;
+}
+
+#wayMore {
+	display: none;
+}
+
 body div.resource{
 	background-color: rgba(200, 200, 200, .9);
 	border-style: dashed;
@@ -110,3 +117,6 @@ body div.resource a{
 	padding: 10px;
 	display: inline-block;
 }
+
+
+
