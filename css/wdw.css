@@ -24,7 +24,6 @@ h3 a:visited:hover{
 
 /*background*/
 body{
-	background-color: pink;
 	float: right;
 	margin-right: 100px;
 	background: linear-gradient(to bottom right, rgba(0,255,0,0), rgba(0,255,0,1)) fixed;
