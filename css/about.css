@@ -78,6 +78,7 @@ figure{
 
 /*description of myself*/
 body main{
+	text-align: center;
 	background-color: rgba(200, 200, 200, .9);
 	text-indent: 2em;
 	text-overflow: auto;
