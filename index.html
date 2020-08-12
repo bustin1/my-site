@@ -3,29 +3,41 @@
 <html>
 	<head>
 		<title>Justin's Website</title>
-        <link rel="stylesheet" type="text/css" href="example.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 	<body>
-		<div class="wrapper">
-			<header>
-				<div><a class="logo" style="background-image: url(Kirby.jpg)"</div>
-				<div><h1>Justin Hsu</h1></div>
-				<p>Computer Science undergraduate at <a href="https://cmu.edu">CMU</a></p>
-			</header>
-			<main>
-				<div>
-					<p>Hello My name is justin</p>
-					<ul>
-						<li>GPI</li>
-						<li>VIM</li>
-						<li>GIT</li>
-					</ul>
-					<h2>Resume</h2>
-					<p>Find my resume <a href="">here</a></p>
-					<hr />
-					<a href="https://github.com/bustin1/my-site/">My Github</a>
-				</div>
-			</main>
-		</div>
+        <header>
+            <div class="container">
+                <img src="LogoJ.png">
+                <nav>
+                    <ul>
+                        <li> <a href="#HOME"> HOME </a> </li>
+                        <li> <a href="#ABOUT"> ABOUT </a> </li>
+                        <li> <a href="#PROJECTS"> PROJECTS </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		<main>
+            <div class='introduction'>
+                <p> Hello! My name is <em>Justin Hsu</em> and I am a Computer Science Undergraduate Varsity Athlete at CMU(not Central Michigan).
+                My goal for this site is to showcase some projects I have worked on, as well as to practice my javscript and html. </p>
+            </div>
+
+            <canvas id='canvas'> </canvas>
+            <div id='score-div'> <h3 id='score'> Score </h3> </div>
+            <hr width="80%">
+            <a name="ABOUT"> 
+                <div class='about'> 
+                    <h2> About </h2>
+                </div>
+            </a>
+            <footer>
+                <a href="mailto: justinhs@andrew.cmu.edu"> <img alt="Gmail" src="GmailLogo.png" width=25px height=25px> </a>
+                <a href="https://github.com/bustin1" target="_blank"> <img alt="Github" src="GithubLogo.png" width=25px height=25px> </a>
+                <a href="https://www.facebook.com/justin.hsu.923" target="_blank"> <img alt="Facebook" src="FacebookLogo.png" width=25px height=25px> </a>
+            </footer>
+		</main>
+        <script src="index.js"> </script>
 	</body>
 </html>
