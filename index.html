@@ -8,7 +8,7 @@
 	<body>
         <header>
             <div class="container">
-                <img src="LogoJ.png">
+                <img src="imgs/LogoJ.png">
                 <nav>
                     <ul>
                         <li> <a href="#HOME"> HOME </a> </li>
@@ -19,23 +19,86 @@
             </div>
         </header>
 		<main>
-            <div class='introduction'>
-                <p> Hello! My name is <em>Justin Hsu</em> and I am a Computer Science Undergraduate Varsity Athlete at CMU(not Central Michigan).
-                My goal for this site is to showcase some projects I have worked on, as well as to practice my javscript and html. </p>
-            </div>
-
-            <canvas id='canvas'> </canvas>
-            <div id='score-div'> <h3 id='score'> Score </h3> </div>
-            <hr width="80%">
-            <a name="ABOUT"> 
-                <div class='about'> 
-                    <h2> About </h2>
+            <div id='main'>
+                <a name="HOME"></a>
+                <h1> Home </h1>
+                <div class='home'>
+                    <p> Hello! My name is <em>Justin Hsu</em> and I am a Computer Science Undergraduate Varsity Athlete at CMU(not Central Michigan).
+                    My goal for this site is to showcase some projects I have worked on, as well as to practice my javscript and html. </p>
                 </div>
-            </a>
+                <canvas id='canvas'> </canvas>
+                <div id='score-div'> <h3 id='score'> Score </h3> </div>
+                <hr width='95%'>
+
+                <a name="ABOUT"> </a>
+                <h1> A little bit about me</h1>
+                <div class='about'> 
+                    <p> Raised in the bay area, I discovered a craving to learn computer science in order to create video games. Over the years I have honed
+                    my skills while still developing games, advanced or bootlegged. I am mainly comfortable coding in Python, though I do know C, Java, 
+                    and of course Javascript. I also have a knack for running and joined the CMU Varsity XC and Track. You can find me on the trails of Pittsburgh 
+                    or in the Bay Area. Through Carnegie Mellon Universitiy, I hope to expand and sharpen my skills in computer science, as well as to pursue a
+                    concentration in <em> machine learning </em>. </p>
+                </div>
+                <hr width='95%'>
+
+                <a name="PROJECTS"></a>
+                <h1> My Projects </h1>
+                <div class='projects'>
+                    <div class='preview-row'>
+                        <div class='preview-cell'>
+                            <h4> Pacman </h4>
+                            <a target="_blank" href="https://github.com/bustin1/Pacman">
+                                <video title="Go to Github" autobuffer onmouseover="this.play()" onmouseout="this.pause()" loop> 
+                                    <source src='videos/PacmanGamePlay.mp4' type='video/mp4'> 
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                            <div class='preview-text'> 
+                                Although pacman and the ghost are represented by colored squares, 
+                                the game mimicks the ghost AI, coins, and powerpellets.</div>
+                        </div>
+                        <div class='preview-cell'>
+                            <h4> MarioMaker </h4>
+                            <a target="_blank" href="https://github.com/bustin1/MarioMaker">
+                                <video title="Go to Github" autobuffer onmouseover="this.play()" onmouseout="this.pause()" loop> 
+                                    <source src='videos/MarioEditing.mp4' type='video/mp4'> 
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                            <div class='preview-text'> Inspired by MarioMaker, I wanted to create a game that replicated the 
+                                freedom and versitility that MarioMaker gave, which is what this game offers </div>
+                        </div>
+                    </div>
+                    <div class='preview-row'>
+                        <div class='preview-cell'>
+                            <h4> 3D Rubik's Cube </h4>
+                            <a target="_blank" href="https://github.com/bustin1/Rubix">
+                                <video title="Go to Github" autobuffer onmouseover="this.play()" onmouseout="this.pause()" loop> 
+                                    <source src='videos/rubix.mp4' type='video/mp4'> 
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                            <div class='preview-text'> Nothing more than a model of Rubik's Cube in 3D to play with written using python's
+                                pyglet graphics library </div>
+                        </div>
+                        <div class='preview-cell'>
+                            <h4> Connect Four! </h4>
+                            <a target="_blank" href="https://github.com/bustin1/connect4">
+                                <img alt="Connect4 img" title="Go to Github" src="imgs/connect4.png">
+                            </a>
+                            <div class='preview-text'> Have you ever felt bored playing against yourself? Well introducing my alphaly betaly pruned
+                                AI for Connect Four. This AI places emphasis on regions of the same color to counter your moves. Watch out, don't 
+                                underestimate its intelligence. </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
             <footer>
-                <a href="mailto: justinhs@andrew.cmu.edu"> <img alt="Gmail" src="GmailLogo.png" width=25px height=25px> </a>
-                <a href="https://github.com/bustin1" target="_blank"> <img alt="Github" src="GithubLogo.png" width=25px height=25px> </a>
-                <a href="https://www.facebook.com/justin.hsu.923" target="_blank"> <img alt="Facebook" src="FacebookLogo.png" width=25px height=25px> </a>
+                <a href="mailto: justinhs@andrew.cmu.edu"> <img title="justinhs@andrew.cmu.edu" alt="Gmail" src="imgs/GmailLogo.png" width=30px height=30px> </a>
+                <a href="https://github.com/bustin1" target="_blank"> <img title="Go to my Github" alt="Github" src="imgs/GithubLogo.png" width=30px height=30px> </a>
+                <a href="https://www.facebook.com/justin.hsu.923" target="_blank"> <img title="Visit my Facebook" alt="Facebook" src="imgs/FacebookLogo.png" width=30px height=30px> </a>
+                <a href="2019-2020 Resume.pdf" target="_blank"> <img title="My Resume" alt="My Resume" src="imgs/ResumeLogo.png" width=30px height=30px> </a>
             </footer>
 		</main>
         <script src="index.js"> </script>

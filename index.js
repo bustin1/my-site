@@ -1,7 +1,12 @@
 
+
+
+/* Following lines of code refer to the game 
+ * on the home page section
+ */
 let canvas = document.getElementById('canvas');
-canvas.width = window.innerWidth * .8;
-canvas.height = window.innerHeight * .6;
+canvas.width = window.innerWidth * .78;
+canvas.height = window.innerHeight * .8;
 
 let trash_img = new Image();
 let trash = {x : canvas.width - 60, y : canvas.height - 50, w : 60, h : 50};
@@ -20,7 +25,7 @@ function init()
     trash_img.onload = function(){
         ctx.drawImage(trash_img, trash.x, trash.y, trash.w, trash.h);
     };
-    trash_img.src = 'trashbin.png';
+    trash_img.src = 'imgs/trashbin.png';
     window.requestAnimationFrame(draw);
     canvas.addEventListener('mousemove', e => {
         arrow.x2 = e.offsetX;
@@ -82,7 +87,8 @@ function draw(tFrame)
             else if(paper.x + paper.w/2 > trash.x && paper.x + paper.w/2 < trash.x + trash.w
                 && paper.y > trash.y + paper.h) // 30 since trash_img has a lot of transparent space 
             {
-                alert("Made it!")
+                let compliment = ['Buckets', 'Made it', 'Nice Shot', 'Ok Ok Ok', 'Woo Back Baby', 'Lets Go', 'Aight Fosho', 'Baaang']
+                alert(compliment[Math.floor(Math.random() * compliment.length)] + '!!!')
                 score += 1;
                 document.getElementById('score').innerHTML = "Score: " + score;
                 reset();
@@ -111,6 +117,31 @@ function reset()
 }
 
 init();
+
+/* For the video thumbnails */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
