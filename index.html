@@ -5,7 +5,9 @@
 		<title>Justin's Website</title>
         <link rel='stylesheet' type='text/css' href='css/index.css'>
         <!-- <script src="node_modules/mathjs/dist/math.js"> </script> -->
-        <script src='node_modules/complex.js/complex.js'> </script>
+        <!-- < script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.2.0/math.js'> </script> -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.2.0/math.min.js'> </script>
+        <!-- <script src='node_modules/complex.js/complex.js'> </script> -->
 	</head>
 	<body>
         <header>
@@ -118,7 +120,8 @@
 
                 <h2 class='math-headings'> Mandlebrot Set </h2>
                 <div class='math-descriptions'> The mandlebrot set is collection of complex number(c) that don't tend towards infinity starting from z=0 
-                after infinite applications of the equation z = z<sup>2</sup> + c </div>
+                after infinite applications of the equation z = z<sup>2</sup> + c. Try numbers from close to 0 since the bigger the number the farther
+                from the origin the set is.</div>
                 <canvas id="mandlebrot-canvas" width="600px" height="400px"> </canvas>
                 <div class='std-wrapper ender'>
                     <input id='mandlebrot-input' type='text' placeholder='change start z: e.g. 0, 1.2'>
@@ -136,7 +139,7 @@
                 <h2 class='math-headings'> Raycasting </h2>
                 <div class='math-descriptions'> 
                     In the olden days, raycasting was a widely used method to render 3D space using 2D math.
-                    Use 'a' and 's' to rotate ccw and cw respectively.
+                    Use 'a' and 'd' to rotate ccw and cw respectively.
                 </div>
                 <canvas id="raycasting-canvas" width="900px" height="500px"> </canvas>
                 <div id='slider-container' class='std-wrapper'> 

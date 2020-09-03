@@ -28,11 +28,11 @@ plot(0);
  */
 function calculate(c, threshold, maxSteps, startNum)
 {
-    let z = new Complex(startNum);
+    let z = math.complex(startNum);
     let i = 0;
-    while (z.mul(z.conjugate()) < threshold && i < maxSteps)
+    while (math.multiply(z, math.conj(z)) < threshold && i < maxSteps)
     {
-        z = z.mul(z).add(c);
+        z = math.add(math.multiply(z, z), c);
         i++;
     }
     return i
@@ -49,7 +49,7 @@ function plot(startNum)
         let mapper = function (x,y) {
             let a = x / 100 - 4;
             let b = 2 - y / 100; 
-            return new Complex(a, b);
+            return math.complex(a, b);
         }
         for(let y=0; y<mandlebrot_canvas.height; y++)
         {
