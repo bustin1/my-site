@@ -3,18 +3,69 @@ html {
 }
 body {
     margin: 0;
-    /*background-color: #e76f51;*/
     background-color: #03071e;
 }
+#main-body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #264653;
+}
+
+
+
+
+
+/* global attributes */
+a {
+    color: rgba(255,255,255,.5);
+}
+input {
+    margin: 5px;
+    padding: 5px;
+}
+button {
+    margin: 5px;
+    padding: 5px;
+}
+h1 {
+    width: 80%;
+    margin: 100px auto 100px auto;
+    color: white;
+    text-align: center;
+}
+.personal-info {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 50px;
+}
+.ender {
+    margin-bottom: 300px;
+}
+canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid white;
+    background-color: #222;
+}
+.std-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 
 /* header-related */
-.container {
+.header-wrapper {
     width: 80%;
     margin: 0 auto;
 }
-.container img {
+.header-wrapper img {
     float: left;
     width: 83px; 
     height: 46px;
@@ -25,13 +76,16 @@ header {
     right: 0;
     position: fixed;
     background: #2a9d8f;
+    z-index: 3;
 }
 /*clearfix hack*/
+/*
 header::after {
     content: "";
     display: table;
     clear: both;
 }
+*/
 nav {
     float: right;
 }
@@ -60,55 +114,16 @@ nav a:hover {
 
 
 
-#main {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #264653;
-}
-
-
-
-/* headings */
-h1 {
-    width: 80%;
-    margin: 100px auto 100px auto;
-    color: white;
-    text-align: center;
-}
-
 
 
 /* home section */
-.home p {
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
-    color: white;
-    padding-bottom: 50px;
-}
-
-canvas {
-    margin-left: auto;
-    margin-right: auto;
+#score {
     display: block;
-    border: 1px solid white;
-}
-
-#score-div {
-    text-align: center;
-    color: white;
-    margin-bottom: 300px;
-}
-
-
-
-/* about section */
-.about {
-    width: 50%;
-    margin: 100px auto 300px auto;
     text-align: center;
     color: white;
 }
+
+
 
 
 
@@ -150,20 +165,84 @@ canvas {
 
 
 
+
+
+/* examples section */
+.math-headings {
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.math-descriptions {
+    color: white;
+    text-align: center;
+    margin: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.math-descriptions span {
+    visibility: hidden;
+    position: absolute;
+    top: -70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    padding: 3px;
+    margin-left: -100px;
+    transition: all ease-in-out 250ms;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.math-descriptions:hover span {
+    visibility: visible;
+    transition: all ease-in-out 250ms;
+    opacity: 1;
+}
+.math-descriptions span::after { /*this creates the arrow effect*/
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+/*mandlebrot set*/
+#mandlebrot-canvas {
+    border: 1px solid black;
+}
+
+
+/* raycasting */
+#raycasting-canvas {
+    background-color: black;
+}
+#slider-value {
+    padding: 10px;
+}
+
+
+
+
+
 /* footer */
 footer {
     position: fixed;
     bottom: 10px;
     width: 90%;
 }
-
 footer img {
     float: right;
     border-radius: 5px;
     margin-right: 25px;
     transition: all ease-in-out 250ms;
 }
-
 footer a img:hover {
     transform: scale(1.5);
     transition: all ease-in-out 250ms;
