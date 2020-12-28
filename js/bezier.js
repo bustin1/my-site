@@ -63,7 +63,7 @@ function initBezierEvents()
     });
     document.getElementsByClassName('bezier-button')[0].onclick = initGraph;
     document.getElementsByClassName('bezier-button')[1].onclick = function cleargraph() {
-        bezier_ctx.clearRect(0, 0, canvas.width, canvas.height)
+        bezier_ctx.clearRect(0, 0, bezier_canvas.width, bezier_canvas.height)
         control_pts = [];
         t = 0;
     };
